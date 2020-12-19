@@ -1,4 +1,4 @@
-const db = require('../db.json')
+const db = require('../../db.json')
 import { Category } from 'entity-types'
 
 export const fetchList = () => {
