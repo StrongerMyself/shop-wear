@@ -1,4 +1,4 @@
-import { Epic as ReduxEpic } from 'redux-observable';
+import { Epic } from 'redux-observable';
 import { StateType, ActionType } from 'typesafe-actions';
 
 declare module 'typesafe-actions' {
@@ -7,12 +7,12 @@ declare module 'typesafe-actions' {
   }
 }
 
-declare module 'ROOT' {
-  export type Store = StateType<typeof import('./store').default>;
+declare module 'root-types' {
+  export type RootStore = StateType<typeof import('./store').default>;
 
-  export type State = StateType<typeof import('./root-reducer').default>;
+  export type RootState = StateType<typeof import('./root-reducer').default>;
 
-  export type Action = ActionType<typeof import('./root-action').default>;
+  export type RootAction = ActionType<typeof import('./root-action').default>;
 
-  export type Epic = ReduxEpic<Action, Action, State>
+  export type RootEpic = Epic<RootAction, RootAction, RootState>
 }

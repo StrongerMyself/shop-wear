@@ -1,8 +1,8 @@
-declare module 'ROOT' {
-  export type Services = typeof import('./index').default;
+declare module 'root-types' {
+  export type RootService = typeof import('./index').default;
 }
 
-declare module 'ENTITY' {
+declare module 'entity-types' {
   export interface Category {
     id: 1
     title: string

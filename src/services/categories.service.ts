@@ -1,7 +1,7 @@
 const db = require('../db.json')
-import { Category } from 'ENTITY'
+import { Category } from 'entity-types'
 
-export const getAll = () => {
+export const fetchList = () => {
   return new Promise<Category[]>((resolve) => {
     setTimeout(() => {
       resolve(db.categories)

@@ -1,7 +1,7 @@
 const db = require('../db.json')
-import { Product } from 'ENTITY'
+import { Product } from 'entity-types'
 
-export const getAll = () => {
+export const fetchList = () => {
   return new Promise<Product[]>((resolve) => {
     setTimeout(() => {
       resolve(db.products)
