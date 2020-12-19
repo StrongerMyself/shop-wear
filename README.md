@@ -1,4 +1,4 @@
-# Demo app: shop wear
+# Demo app: shop-wear
 
 ## Scripts
 - ```yarn``` install dependency
