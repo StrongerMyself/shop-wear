@@ -1,5 +1,5 @@
-// import * as someActions from '../features/some/actions';
+import * as catalog from '../features/catalog/actions';
 
 export default {
-//   some: someActions,
+  catalog,
 };

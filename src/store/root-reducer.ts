@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 
-// import { someReducer } from '../features/some/reducer'
+import catalog from '../features/catalog/reducer'
 
 export default combineReducers({
-  // some: someReducer,
+  catalog,
 })
